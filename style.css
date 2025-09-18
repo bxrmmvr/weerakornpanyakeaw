@@ -211,7 +211,7 @@ footer {
         justify-content: center;
         text-align: center;
         font-size: 1rem; /* ปรับขนาดฟอนต์ให้เท่ากับต้นฉบับ */
-        padding: 15px 18px; /* ปรับ padding ให้ปุ่มใหญ่ขึ้น */
+        padding: 6px 10px; /* ปรับ padding ให้ปุ่มใหญ่ขึ้น */
     }
 
     /* จัดเรียง Card ทั้งหมด */
@@ -244,3 +244,4 @@ footer {
         font-size: 0.9rem;
     }
 }
+
