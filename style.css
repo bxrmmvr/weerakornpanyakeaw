@@ -190,4 +190,49 @@ footer {
     font-size: 0.8rem;
     color: #666;
     margin-top: 20px;
+
+}
+
+@media (max-width: 600px) {
+    /* ปรับขนาดฟอนต์ของหัวข้อหลัก */
+    .profile-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    /* จัดเรียงปุ่มโซเชียลจากแนวนอนเป็นแนวตั้ง */
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    /* ปรับขนาดปุ่มโซเชียลให้เต็มความกว้าง */
+    .social-icon {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    /* จัดเรียงเนื้อหาใน Card จากแนวนอนเป็นแนวตั้ง */
+    .card {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .card-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    /* ทำให้ปุ่ม 'Learn more' หรือ 'Coming soon' เต็มความกว้าง */
+    .card-button {
+        width: 100%;
+    }
 }
