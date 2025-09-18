@@ -198,41 +198,44 @@ footer {
     .profile-header h1 {
         font-size: 1.8rem;
     }
-    
+
     /* จัดเรียงปุ่มโซเชียลจากแนวนอนเป็นแนวตั้ง */
     .social-links {
         flex-direction: column;
-        align-items: stretch;
-    }
-    
-    /* ปรับขนาดปุ่มโซเชียลให้เต็มความกว้าง */
-    .social-icon {
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 8px;
+        align-items: center; /* แก้ไข: ทำให้ปุ่มอยู่ตรงกลาง */
+        gap: 10px; /* เพิ่ม: ระยะห่างระหว่างปุ่ม */
     }
 
-    /* จัดเรียงเนื้อหาใน Card จากแนวนอนเป็นแนวตั้ง */
+    /* ปรับขนาดปุ่มโซเชียลให้พอดี */
+    .social-icon {
+        width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+        justify-content: center;
+        text-align: center; /* จัดตัวอักษรให้อยู่ตรงกลาง */
+    }
+
+    /* แก้ไขการจัดวาง Card ให้เหมือนเดิม (แนวนอน) แต่ปรับให้เหมาะสมกับมือถือ */
     .card {
-        flex-direction: column; 
+        flex-direction: row; /* แก้ไข: ให้กลับไปจัดเรียงแบบแนวนอน */
         align-items: center;
-        text-align: center;
+        justify-content: space-between;
         gap: 15px;
+        padding: 12px;
     }
 
     .card-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
     }
 
     .card-icon {
-        margin-right: 0;
-        margin-bottom: 5px;
+        margin-right: 10px;
+        margin-bottom: 0;
     }
 
-    /* ทำให้ปุ่ม 'Learn more' หรือ 'Coming soon' เต็มความกว้าง */
+    /* ทำให้ปุ่ม 'Learn more' หรือ 'Coming soon' มีขนาดเล็กลง */
     .card-button {
-        width: 100%;
+        width: auto; /* กลับไปใช้ขนาดอัตโนมัติ */
+        padding: 8px 12px; /* ปรับขนาดปุ่มให้เล็กลง */
     }
 }
